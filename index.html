@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/settings/reset.css">
     <link rel="stylesheet" href="./assets/css/settings/colors.css">
 	<link rel="stylesheet" href="./assets/css/settings/base.css">
+    <link rel="stylesheet" href="./assets/css/settings/dracula.css">
 	<link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/menu.css">
     <link rel="stylesheet" href="./assets/css/components/main.css">
@@ -15,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>AluraDev</title>
-    
 </head>
 <body>
     <header>
@@ -23,26 +23,46 @@
         <input type="text" id="header__search-box" name="header__search-box" placeholder="Busque por algo">
         <div class="header__responsive">
             <i class="fas fa-search"></i><a href="#"></a>
-            <i class="fas fa-bars"></i><a href="#"></a>
+            <i class="fas fa-bars hamburguer"></i><a href="#"></a>
         </div>
+
         <div class="header__user">
-            <span class="header__user-photo"></span>
-            <p class="header__user-name">Harry</p>
+            <div class="header__hover">
+                <span class="header__user-photo"></span>
+                <p class="header__user-name">Harry</p>
+            </div>
         </div>
     </header>
     <main>
         <nav class="menu__nav">
             <h1>Menu</h1>
             <ul class="menu__list">
-                <div class="menu__editor">
-                    <div class="menu__editor-icon"><i class="fas fa-code"></i></div><li class="menu__item"><a href="index.html">Editor de código</a></li>
+                <div class="menu__active">
+                    <div class="item__active"><i class="fas fa-code"></i></div><li><a href="index.html">Editor de código</a></li>
                 </div>
-                <div class="menu__community">
-                    <div class="menu__community-icon"><i class="fas fa-users"></i></div><li class="menu__item"><a href="community.html">Comunidade</a></li>
+                <div class="menu__disable">
+                    <div class="item__disable"><i class="fas fa-users"></i></div><li><a href="community.html">Comunidade</a></li>
                 </div>
             </ul>
         </nav>
         <section class="main__content">
+
+            <div class="header__menu">
+                <div class="menu__items">
+                <div class="menu__active">
+                    <div class="item__active"><i class="fas fa-code"></i></div><li><a href="index.html">Editor de código</a></li>
+                </div>
+                <div class="menu__disable">
+                    <div class="item__disable"><i class="fas fa-users"></i></div><li><a href="community.html">Comunidade</a></li>
+                </div>
+            </div>
+                <div class="menu__line"></div>
+                <div class="menu_hover">
+                <span class="header__user-photo"></span>
+                <p class="header__user-name">Harry</p>
+                </div>
+            </div>
+
             <div class="main__content-color">
                 <div class="main__content-code">
                     <div class="mac-icons">
@@ -50,19 +70,10 @@
                         <div class="icon-2"></div>
                         <div class="icon-3"></div>
                     </div>
-                    <textarea id="main__code" name="main__code" rows="13" cols="150">
-                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-                        const unfold = (f, seed) => {
-                            const go = (f, seed, acc) => {
-                                const res = f(seed)
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                            }
-                        return go(f, seed, [])
-                        }
-                    </textarea>
+                    <!--<textarea id="main__code" name="main__code" rows="13" cols="150"></textarea>-->
+                        <div id="main__code">
+                        <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                        </div>
                 </div>
             </div>
             <button class="main__button-highlight">Visualizar com o highlight</button>
@@ -76,7 +87,7 @@
             <div class="main__project-personalization">
                 <h1>Personalização</h1>
                 <div class="personalization-container">
-                <select name="main__project-language" class="lmain__project-language" id="main__project-language">
+                <select name="main__project-language" class="main__project-language" id="main__project-language">
                     <option value="JavaScript">JavaScript</option>
                     <option value="HTML">HTML</option>
                     <option value="CSS">CSS</option>
@@ -87,5 +98,7 @@
             </div>
         </section>
     </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

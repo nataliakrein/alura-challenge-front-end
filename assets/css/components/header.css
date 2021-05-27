@@ -17,6 +17,7 @@ header {
 
 #header__search-box {
     width: 50%;
+    height: 56px;
     padding: 16px 14px 16px 14px;
     border-style: none;
     background: rgba(255, 255, 255, 0.16);
@@ -34,12 +35,30 @@ header {
     width: 20%;
 }
 
+.header__hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 56px;
+}
+
+.header__hover:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
 .header__user-photo {
     background-image: url("../../img/photo.png");
     width: 32px;
     height: 32px;
     margin-right: 8px;
 }
+
+.header__menu {
+    display: none;
+}
+
 
 /* RESPONSIVIDADE */
 
@@ -51,7 +70,7 @@ header {
         justify-content: space-between;
         align-items: center;
     }
-
+  
     #header__search-box  {
         display: none; 
     }
@@ -67,11 +86,25 @@ header {
         width: 96px;
         height: 96px;
     }
-
+    
     .header__responsive i {
-        width: 20px;
-        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
     }
+
+    .header__responsive i:hover {
+        background: rgba(80, 129, 251, 0.08);
+        border-radius: 16px;
+    }
+
+    .header__responsive i:active {
+        background: rgba(80, 129, 251, 0.16);
+        border-radius: 16px;
+    }
+
 }
 
 @media (min-width: 620px) and (max-width: 1024px) {
@@ -86,10 +119,30 @@ header {
 
     .header__responsive {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    .header__user, .header__responsive i:first-child  {
+    .header__responsive i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+    }
+
+    .header__user, .header__responsive i:first-child {
         display: none; 
+    }
+
+    .header__responsive i:hover {
+        background: rgba(80, 129, 251, 0.08);
+        border-radius: 16px;
+    }
+
+    .header__responsive i:active {
+        background: rgba(80, 129, 251, 0.16);
+        border-radius: 16px;
     }
 }
 

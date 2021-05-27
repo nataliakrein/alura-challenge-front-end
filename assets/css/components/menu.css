@@ -10,9 +10,59 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
+}
+
+.menu__active {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
+.item__active, .item__disable {
+    background: var(--blue-300);
+    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.item__active {
+    background: var(--blue-300);
+}
+
+.menu__disable {
+    display: flex;
+    align-items: center;
+    opacity: 0.64;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.item__disable {
+    background: rgba(80, 129, 251, 0.16);
+}
+
+.item__disable svg {
+    opacity: 0.64;
+}
+
+.item__disable:hover {
+    background: rgba(80, 129, 251, 0.64);
+}
+
+.menu__community:hover, .item__disable svg:hover {
+    opacity: 0.72;
+}
+
+
+
+
+
+/*
 .menu__editor {
     display: flex;
     align-items: center;
@@ -47,6 +97,15 @@
 .menu__community-icon svg {
     opacity: 0.64;
 }
+
+.menu__community-icon:hover {
+    background: rgba(80, 129, 251, 0.64);
+}
+
+.menu__community:hover, .menu__community-icon svg:hover {
+    opacity: 0.72;
+}
+*/
 
 /* RESPONSIVIDADE */
 @media (max-width: 620px){
