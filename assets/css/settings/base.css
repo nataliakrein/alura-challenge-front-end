@@ -1,0 +1,41 @@
+  body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--dark-blue);
+    color: var(--white);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/**/
+main {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin: 0px 32px;
+}
+/**/
+::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 0.64;
+    line-height: 24px;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: var(--white);
+    opacity: 0.64;  
+    line-height: 24px;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--white); 
+    opacity: 0.64;
+    line-height: 24px;
+ }
+ 
+ :-ms-input-placeholder {  
+    color: var(--white); 
+    opacity: 0.64;
+    line-height: 24px;
+ }
