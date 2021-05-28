@@ -1,0 +1,16 @@
+:root {
+    /* blue: */
+    --dark-blue: #051D3B;
+    --blue-300: #5081FB;
+    --blue-200: #7BA4FC;
+    --blue-100: #96B9FD;
+
+    /* mac: */
+    --mac_green: #27C93F;
+    --mac_red: #FF5F56;
+    --mac_yellow: #FFBD2E;
+
+    /* neutral: */
+    --dark-grey: #141414;
+    --white: #FFFFFF;
+}
