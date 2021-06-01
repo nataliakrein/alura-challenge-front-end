@@ -15,7 +15,7 @@ Principais conceitos colocados em prática:
 ![](https://user-images.githubusercontent.com/75141156/120339086-3186ce80-c2cb-11eb-9593-a1daa64f95c2.gif)
 
 
-### 💻 Pagina de edição
+### 💻 Pagina comunidade
 ![](https://user-images.githubusercontent.com/75141156/120339292-5da24f80-c2cb-11eb-96c6-e43ab869ed81.gif)
 
 
