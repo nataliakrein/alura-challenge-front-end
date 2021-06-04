@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/settings/reset.css">
+    <link rel="stylesheet" href="./assets/css/settings/colors.css">
+	<link rel="stylesheet" href="./assets/css/settings/base.css">
+	<link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/menu.css">
+    <link rel="stylesheet" href="./assets/css/settings/dracula.css">
+    <link rel="stylesheet" href="./assets/css/components/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>AluraDev - Comunidade</title>
+</head>
+<body>
+    <header>
+        <img class="header__logo" src="assets/img/logo.svg" alt="logo">
+        <input type="text" id="header__search-box" name="header__search-box" placeholder="Busque por algo">
+        <div class="header__responsive">
+            <i class="fas fa-search"></i><a href="#"></a>
+            <i class="fas fa-bars hamburguer"></i><a href="#"></a>
+        </div>
+        <div class="header__user">
+            <div class="header__hover">
+                <span class="header__user-photo"></span>
+                <p class="header__user-name">Harry</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="menu__nav">
+            <h1>Menu</h1>
+            <ul class="menu__list">
+                <div class="menu__disable">
+                    <div class="item__disable"><i class="fas fa-code"></i></div><li><a href="index.html">Editor de código</a></li>
+                </div>
+                <div class="menu__active">
+                    <div class="item__active"><i class="fas fa-users"></i></div><li><a href="community.html">Comunidade</a></li>
+                </div>
+            </ul>
+        </nav>
+        <section class="main">
+
+            <div class="header__menu">
+                <div class="menu__items">
+                <div class="menu__disable">
+                    <div class="item__disable"><i class="fas fa-code"></i></div><li><a href="index.html">Editor de código</a></li>
+                </div>
+                <div class="menu__active">
+                    <div class="item__active"><i class="fas fa-users"></i></div><li><a href="community.html">Comunidade</a></li>
+                </div>
+            </div>
+                <div class="menu__line"></div>
+                <div class="menu_hover">
+                <span class="header__user-photo"></span>
+                <p class="header__user-name">Harry</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="./assets/scripts/community.js"></script>
+    <script>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>
