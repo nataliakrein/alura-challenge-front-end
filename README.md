@@ -8,7 +8,7 @@ Principais conceitos colocados em prática:
   <li>Flexbox;</li>
   <li>Media queries;</li>
   <li>Manipulação de DOM;</li>
-  <li>Eventos.</li>
+  <li>LocalStorage.</li>
 </ul> 
 
 ### 💻 Pagina de edição
